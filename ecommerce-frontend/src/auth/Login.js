@@ -53,7 +53,7 @@ import { login } from "redux/actions/auth-actions.js";
              localStorage.setItem("username",response.data.username);
              localStorage.setItem("roles",response.data.roles);
              localStorage.setItem("type",response.data.tokenType);
-             localStorage.setItem("token",response.data.accessToken);
+             localStorage.setItem("accessToken",response.data.accessToken);
              dispatch(login());
               setLoader(false);
               history.push("/admin/index");
